@@ -9,7 +9,7 @@ class SetUpCSV:
         self.data = []
 
     def read_csv(self):
-        # If file path does not exist.
+        # If file path does not exist, raise a FileNotFoundError
         if not os.path.exists(self.file_path):
             raise FileNotFoundError(f"File {self.file_path} not found.")
         try:
