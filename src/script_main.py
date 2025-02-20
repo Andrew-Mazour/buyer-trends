@@ -2,7 +2,7 @@ import csv
 import os
 from collections import defaultdict
 
-
+#Class to handle the setup of CSV files, reading and converting data for further analysis.
 class SetUpCSV:
     def __init__(self, file_path):
         self.file_path = file_path
