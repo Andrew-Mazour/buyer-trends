@@ -33,7 +33,7 @@ class SetUpCSV:
                 print(f"Invalid purchase amount '{row['Purchase Amount']}' found. Setting it to 0.0.")
                 row['Purchase Amount'] = 0.0
 
-
+# Class to handle analysis of purchases, comparing historical and current data
 class PurchaseAnalysis:
     def __init__(self, historical_data, current_data):
         self.historical_data = historical_data
