@@ -20,6 +20,7 @@ class SetUpCSV:
                 for row in reader:
                     self.data.append(row)
         except Exception as e:
+            # Catching any error during reading the file and raising a generic Exception
             raise Exception(f"Error loading CSV file: {e}")
 
     def convert_data(self):
