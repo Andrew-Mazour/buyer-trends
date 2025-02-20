@@ -28,6 +28,7 @@ class SetUpCSV:
             # Data must be read as floats to perform calculations.
             try:
                 row['Purchase Amount'] = float(row['Purchase Amount'])
+            # If there is an invalid purchase amount, setting it to 0.0 and printing a warning
             except ValueError:
                 print(f"Invalid purchase amount '{row['Purchase Amount']}' found. Setting it to 0.0.")
                 row['Purchase Amount'] = 0.0
