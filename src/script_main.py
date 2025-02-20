@@ -13,6 +13,7 @@ class SetUpCSV:
         if not os.path.exists(self.file_path):
             raise FileNotFoundError(f"File {self.file_path} not found.")
         try:
+            # Open the file and read it as a dictionary
             with open(self.file_path, mode='r') as file:
                 # Turn CSV into dictionary using DictReader.
                 reader = csv.DictReader(file)
