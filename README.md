@@ -17,4 +17,4 @@ This Python script compares and analyzes company purchasing data from two CSV fi
 - **README.md**: Provides a description of the project and information about the repository.
 
 ## Running the Tests
-To run the tests, navigate to the `tests/` directory and run the following command: python -m unittest test_script_main.py
+To run the tests, navigate to the `tests/` directory and run the following command: python -m unittest test_script_main.py.
