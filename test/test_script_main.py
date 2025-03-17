@@ -22,6 +22,7 @@ class TestSetUpCSV(unittest.TestCase):
         checker.read_csv()
         # Ensures length of data is 4 (3 indices).
         self.assertEqual(len(checker.data), 3)
+        
         # Ensures order is correct, starting with ID 1 (strips whitespaces).
         self.assertEqual(checker.data[0]['ID'].strip(), '1')
 
