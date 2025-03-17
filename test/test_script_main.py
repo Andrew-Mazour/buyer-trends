@@ -82,6 +82,7 @@ class TestAnalyzeTrends(unittest.TestCase):
         self.trend_analysis = AnalyzeTrends(self.data)
 
     def test_analyze_trends(self):
+        
         # Test analyze_trends() function using sample data.
         trends = self.trend_analysis.analyze_trends()
         expected_trends = [("2024-01", 100.50), ("2024-02", 200.00), ("2024-03", 300.00)]
