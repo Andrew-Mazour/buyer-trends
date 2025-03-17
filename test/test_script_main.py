@@ -34,6 +34,7 @@ class TestSetUpCSV(unittest.TestCase):
         checker = SetUpCSV("test.csv")
         checker.read_csv()
         checker.convert_data()
+        
         # Check that purchase amounts have been converted to floats.
         self.assertEqual(checker.data[2]['Donation Amount'], 0.0)
         self.assertEqual(checker.data[0]['Donation Amount'], 100.50)
